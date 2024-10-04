@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <header>
+        <h1>Aprendendo Formulários</h1>
+    </header>
+
+    <main>
+        <h2>Formulário</h2>
+
+        <form action="#" method="post">
+
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Insira sua senha">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" 
+            placeholder="Insira seu email">
+
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" placeholder="Insira sua idade" min="18" max="100">
+
+            <label for="website">Website</label>
+            <input type="url" name="website" id="website" placeholder="https://" id="website">
+
+            <label for="termos" class="inline-label">Aceitos os termos</label>
+            <input type="checkbox" name="termos">
+
+            <div id="caixa-genero">
+                <label for="genero">Gênero:</label>
+
+                <input type="radio" class="inline-label" name="genero" value="masculino" class="inline-label">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" class="inline-label" name="genero" value="feminino" class="inline-label">
+                <label for="feminino">Feminino</label>
+
+                <input type="radio" class="inline-label" name="genero" value="outro" class="inline-label">
+                <label for="outro">Outro</label>
+            </div>
+
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="date" name="data-nascimento">
+
+            <label for="cor-favorita">Cor Favorita:</label>
+            <input type="color" name="cor-favorita">
+
+            <label for="satisfacao">Satisfação (0 a 10):</label>
+            <input type="range" name="satisfacao" min="0" max="10">
+
+            <label for="comentarios">Comentários</label>
+            <br>
+            <textarea name="comentarios" rows="4" cols="30" placeholder="Escreva seu comentário"></textarea>
+
+            <label for="pais">País</label>
+            <select name="pais">
+                <option value="bra">Brasil</option>
+                <option value="arg">Argentina</option>
+                <option value="eua">Estados Unidos da América</option>
+                <option value="pol">Polônia</option>
+                <option value="srb">Sérvia</option>
+            </select>
+
+            <label for="arquivo">Carregar arquivo:</label>
+            <input type="file" name="arquivo">
+
+            <br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Formulário feito por: Peterson Costa Trindade</p>
+    </footer>
+</body>
+
+</html>
